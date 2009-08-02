@@ -136,3 +136,89 @@ CREATE TABLE tx_tceformstest_user (
 	KEY parent (pid),
 	KEY t3ver_oid (t3ver_oid,t3ver_wsid)
 );
+
+#
+# Table structure for table 'tx_tceformtest_input'
+#
+CREATE TABLE tx_tceformtest_input (
+	uid int(11) NOT NULL auto_increment,
+	pid int(11) DEFAULT '0' NOT NULL,
+	tstamp int(11) DEFAULT '0' NOT NULL,
+	crdate int(11) DEFAULT '0' NOT NULL,
+	cruser_id int(11) DEFAULT '0' NOT NULL,
+	deleted tinyint(4) DEFAULT '0' NOT NULL,
+	hidden tinyint(4) DEFAULT '0' NOT NULL,
+	inputfield_size tinytext NOT NULL,
+	inputfield_max tinytext NOT NULL,
+	inputfield_checkbox tinytext NOT NULL,
+	inputfield_default tinytext NOT NULL,
+	inputfield_range tinytext NOT NULL,	
+	
+	PRIMARY KEY (uid),
+	KEY parent (pid)
+);
+
+CREATE TABLE tx_tceformtest_input_eval (
+	uid int(11) NOT NULL auto_increment,
+	pid int(11) DEFAULT '0' NOT NULL,
+	tstamp int(11) DEFAULT '0' NOT NULL,
+	crdate int(11) DEFAULT '0' NOT NULL,
+	cruser_id int(11) DEFAULT '0' NOT NULL,
+	deleted tinyint(4) DEFAULT '0' NOT NULL,
+	hidden tinyint(4) DEFAULT '0' NOT NULL,
+	
+	inputfield_required tinytext NOT NULL, 
+  inputfield_trim tinytext NOT NULL, 
+	inputfield_date tinytext NOT NULL, 
+	inputfield_datetime tinytext NOT NULL,
+		  inputfield_time tinytext NOT NULL,
+		  inputfield_timesec tinytext NOT NULL,
+		  inputfield_year tinytext NOT NULL,
+		  inputfield_int tinytext NOT NULL,
+		  inputfield_lower tinytext NOT NULL,
+		  inputfield_upper tinytext NOT NULL,
+		  inputfield_alpha tinytext NOT NULL,
+		  inputfield_num tinytext NOT NULL,
+		  inputfield_alphanum tinytext NOT NULL,
+		  inputfield_alphanum_x tinytext NOT NULL,
+		  inputfield_nospace tinytext NOT NULL,
+		  inputfield_md5 tinytext NOT NULL,
+		  inputfield_is_in tinytext NOT NULL,
+		  inputfield_password tinytext NOT NULL,
+		  inputfield_double2 tinytext NOT NULL,
+		  inputfield_unique tinytext NOT NULL,
+		  inputfield_uniqueInPid tinytext NOT NULL,
+		  inputfield_userdefined tinytext NOT NULL,
+		  inputfield_combination tinytext NOT NULL,
+	
+	PRIMARY KEY (uid),
+	KEY parent (pid)
+);
+
+CREATE TABLE tx_tceformtest_passthrough (
+	uid int(11) NOT NULL auto_increment,
+	pid int(11) DEFAULT '0' NOT NULL,
+	tstamp int(11) DEFAULT '0' NOT NULL,
+	crdate int(11) DEFAULT '0' NOT NULL,
+	cruser_id int(11) DEFAULT '0' NOT NULL,
+	deleted tinyint(4) DEFAULT '0' NOT NULL,
+	hidden tinyint(4) DEFAULT '0' NOT NULL,	
+	passthrough tinytext NOT NULL,	
+	
+	PRIMARY KEY (uid),
+	KEY parent (pid)
+);
+
+CREATE TABLE tx_tceformtest_flex (
+	uid int(11) NOT NULL auto_increment,
+	pid int(11) DEFAULT '0' NOT NULL,
+	tstamp int(11) DEFAULT '0' NOT NULL,
+	crdate int(11) DEFAULT '0' NOT NULL,
+	cruser_id int(11) DEFAULT '0' NOT NULL,
+	deleted tinyint(4) DEFAULT '0' NOT NULL,
+	hidden tinyint(4) DEFAULT '0' NOT NULL,	
+	
+	
+	PRIMARY KEY (uid),
+	KEY parent (pid)
+);
