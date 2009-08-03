@@ -40,7 +40,7 @@ $TCA['tx_tceformstest_select'] = array(
 				'foreign_table_prefix' => 'Prefix: '
 			)
 		),
-		'select_4' => array(
+		'select_fileFolder' => array(
 			'exclude' => 0,
 			'label' => 'Flag icons from icons folder in extension. Should also display icons from subfolders, watch for flag_se.gif. Icons should be ordered in 4 columns.',
 			'config' => Array (
@@ -81,6 +81,21 @@ $TCA['tx_tceformstest_select'] = array(
 					array('item 3 (es) -> Icon from typo3/gfx/ folder', 'es', 'flags/es.gif')
 				),
 				'default' => 'fr'
+			)
+		),
+		'select_iconsInOptionTags' => array(
+			'exclude' => 0,
+			'label' => 'Icons in option tags, noIconsBelowSelect',
+			'config' => array (
+				'type' => 'select',
+				'items' => array(
+					array('item 1 (de)', 'de', 'EXT:tceforms_test/icons/flag_de.gif'),
+					array('item 2 (fr)', 'fr', 'EXT:tceforms_test/icons/flag_fr.gif'),
+					array('item 3 (es) -> Icon from typo3/gfx/ folder', 'es', 'flags/es.gif')
+				),
+				'default' => 'fr',
+				'iconsInOptionTags' => TRUE,
+				'noIconsBelowSelect' => TRUE
 			)
 		),
 		'select_multiple' => array (
@@ -128,7 +143,7 @@ $TCA['tx_tceformstest_select'] = array(
 		),
 		'select_special_tables_no_icons' => array (
 			'exclude' => 0,
-			'label' => 'Select box with all tables, no icons underneath',
+			'label' => 'Select box with all tables, no icons underneath (suppress_icons enabled)',
 			'config' => array (
 				'type' => 'select',
 				'special' => 'tables',
@@ -220,7 +235,7 @@ $TCA['tx_tceformstest_select'] = array(
 		),
 	),
 	'types' => array (
-		'0' => array('showitem' => '--div--;General options, select_1;;;;1-1-1, select_2, select_3, select_4, select_5, select_icons, select_multiple, select_exclusiveKeys, --div--;"special" values, select_special_tables;;;;1-1-1, select_special_tables_no_icons, select_special_pagetypes, select_special_exclude, select_special_modlistgroup, select_special_modlistuser, select_special_explicitvalues, select_special_languages, --div--;list styles, select_itemListStyle, --div--;Render modes, select_renderModeCheckbox')
+		'0' => array('showitem' => '--div--;General options, select_1;;;;1-1-1, select_2, select_3, select_5, select_multiple, select_exclusiveKeys, --div--;Icons, select_fileFolder, select_icons, select_iconsInOptionTags, --div--;"special" values, select_special_tables;;;;1-1-1, select_special_tables_no_icons, select_special_pagetypes, select_special_exclude, select_special_modlistgroup, select_special_modlistuser, select_special_explicitvalues, select_special_languages, --div--;list styles, select_itemListStyle, --div--;Render modes, select_renderModeCheckbox')
 	),
 );
 
