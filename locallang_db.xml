@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'tceforms_test'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_tceformstest_check">TCEforms Test field, type "check"</label>
+			<label index="tx_tceformstest_input">TCEforms Test field, type "input"</label>
+			<label index="tx_tceformstest_none">TCEforms Test field, type "none"</label>
+			<label index="tx_tceformstest_text">TCEforms Test field, type "text"</label>
+			<label index="tx_tceformstest_user">TCEforms Test field, type "user"</label>
+			<label index="tx_tceformstest_check.checkbox_1">Single checkbox</label>
+			<label index="tx_tceformstest_check.checkbox_2">Single checkbox, pre-selected</label>
+			<label index="tx_tceformstest_check.checkbox_3">Two checkboxes with labels</label>
+			<label index="tx_tceformstest_check.checkbox_4">Two checkboxes with labels, both pre-selected</label>
+			<label index="tx_tceformstest_check.checkbox_5">Two checkboxes with labels, item 1 pre-selected</label>
+			<label index="tx_tceformstest_check.checkbox_6">Seven checkboxes, six should be in one row</label>
+			<label index="tx_tceformstest_check.checkbox_7">Two checkboxes, should be shown if RTE (?)</label>
+			<label index="tx_tceformstest_check.checkbox_8">Two checkboxes, first should have text "changed by function" in its label</label>
+			<label index="tx_tceformstest_none.none_1">Einzelne None</label>
+			<label index="tx_tceformstest_none.none_2">Einzelne None</label>
+			<label index="tx_tceformstest_none.none_3">Einzelne None</label>
+			<label index="tx_tceformstest_none.none_4">Einzelne None</label>
+			<label index="tx_tceformstest_none.none_5">Einzelne None</label>
+			<label index="tx_tceformstest_none.none_6">Einzelne None</label>
+			<label index="tx_tceformstest_none.none_7">Einzelne None</label>
+			<label index="tx_tceformstest_none.none_8">Einzelne None</label>
+			<label index="tx_tceformstest_user.user_1">Einzelne User</label>
+			<label index="tx_tceformstest_user.user_2">Einzelne User</label>
+			<label index="tx_tceformstest_user.user_3">Einzelne User</label>
+			<label index="tx_tceformstest_user.user_4">Einzelne User</label>
+			<label index="tx_tceformstest_user.user_5">Einzelne User</label>
+			<label index="tx_tceformstest_user.user_6">Einzelne User</label>
+			<label index="tx_tceformstest_user.user_7">Einzelne User</label>
+			<label index="tx_tceformstest_user.user_8">Einzelne User</label>
+			<label index="tx_tceformstest_input.inputfield">Inputfield</label>
+			<label index="tx_tceformstest_text.text1">text area 1: wrap=off</label>
+			<label index="tx_tceformstest_text.text2">text area 2: wrap=virtual</label>
+			<label index="tx_tceformstest_text.text3">text area 3: with wizard SCRIPT see http://typo3.org/documentation/document-library/core-documentation/doc_core_api/4.2.0/view/4/3/#id4453361</label>
+			<label index="tx_tceformstest_text.text4">text area 4: with wizard POPUP</label>
+			<label index="tx_tceformstest_text.text5">text area 5: with wizard USERFUNC</label>
+			<label index="tx_tceformstest_text.text6">text area 6: with wizard COLORBOX</label>
+			<label index="tx_tceformstest_text.text7">text area 7: with wizard SELECT</label>
+		</languageKey>
+	</data>
+</T3locallang>

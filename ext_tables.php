@@ -25,9 +25,9 @@ $TCA['tx_tceformstest_check'] = array (
 	),
 );
 
-$TCA["tx_tceformtest_input"] = array (
+$TCA["tx_tceformstest_input"] = array (
 	"ctrl" => array (
-		'title'     => 'Tests functionality of input fields',		
+		'title'     => 'TCEforms Test field, type "input"',		
 		'label'     => 'uid',	
 		'tstamp'    => 'tstamp',
 		'crdate'    => 'crdate',
@@ -38,16 +38,16 @@ $TCA["tx_tceformtest_input"] = array (
 			'disabled' => 'hidden',
 		),
 		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca_input.php',
-		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_tceformtest_input.gif',
+		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_tceformstest_input.gif',
 	),
 	"feInterface" => array (
 		"fe_admin_fieldList" => "hidden, inputfield",
 	)
 );
 
-$TCA["tx_tceformtest_input_eval"] = array (
+$TCA["tx_tceformstest_input_eval"] = array (
 	"ctrl" => array (
-		'title'     => 'Tests eval functionality of input fields',
+		'title'     => 'TCEforms Test field, "eval" settings of type "input"',
 		'label'     => 'uid',	
 		'tstamp'    => 'tstamp',
 		'crdate'    => 'crdate',
@@ -58,7 +58,7 @@ $TCA["tx_tceformtest_input_eval"] = array (
 			'disabled' => 'hidden',
 		),
 		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca_input_eval.php',
-		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_tceformtest_input.gif',
+		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_tceformstest_input.gif',
 	),
 	"feInterface" => array (
 		"fe_admin_fieldList" => "hidden, inputfield",
@@ -91,9 +91,9 @@ $TCA['tx_tceformstest_none'] = array (
 );
 
 
-$TCA["tx_tceformtest_passthrough"] = array (
+$TCA["tx_tceformstest_passthrough"] = array (
 	"ctrl" => array (
-		'title'     => 'Passthrough',
+		'title'     => 'TCEforms Test field, type "passthrough"',
 		'label'     => 'uid',	
 		'tstamp'    => 'tstamp',
 		'crdate'    => 'crdate',
@@ -104,16 +104,16 @@ $TCA["tx_tceformtest_passthrough"] = array (
 			'disabled' => 'hidden',
 		),
 		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca_passthrough.php',
-		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_tceformtest_input.gif',
+		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_tceformstest_input.gif',
 	),
 	"feInterface" => array (
 		"fe_admin_fieldList" => "hidden, passthrough",
 	)
 );
 
-$TCA["tx_tceformtest_flex"] = array (
+$TCA["tx_tceformstest_flex"] = array (
 	"ctrl" => array (
-		'title'     => 'flex',
+		'title'     => 'TCEforms Test field, type "flex"',
 		'label'     => 'uid',
 		'tstamp'    => 'tstamp',
 		'crdate'    => 'crdate',
@@ -124,16 +124,16 @@ $TCA["tx_tceformtest_flex"] = array (
 			'disabled' => 'hidden',
 		),
 		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca_flex.php',
-		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_tceformtest_input.gif',
+		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_tceformstest_input.gif',
 	),
 	"feInterface" => array (
 		"fe_admin_fieldList" => "hidden",
 	)
 );
 
-$TCA['tx_tceformtest_text'] = array (
+$TCA['tx_tceformstest_text'] = array (
 	'ctrl' => array (
-		'title'     => 'LLL:EXT:tceformtest/locallang_db.xml:tx_tceformtest_text',		
+		'title'     => 'LLL:EXT:tceforms_test/locallang_db.xml:tx_tceformstest_text',		
 		'label'     => 'uid',	
 		'tstamp'    => 'tstamp',
 		'crdate'    => 'crdate',
@@ -144,7 +144,7 @@ $TCA['tx_tceformtest_text'] = array (
 			'disabled' => 'hidden',	
 		),
 		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca.php',
-		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_tceformtest_text.gif',
+		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_tceformstest_text.gif',
 	),
 );
 

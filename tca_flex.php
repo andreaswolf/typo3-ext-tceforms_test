@@ -1,12 +1,12 @@
-﻿<?php
+<?php
 if (!defined ('TYPO3_MODE')) 	die ('Access denied.');
 
-$TCA["tx_tceformtest_flex"] = array (
-	"ctrl" => $TCA["tx_tceformtest_flex"]["ctrl"],
+$TCA["tx_tceformstest_flex"] = array (
+	"ctrl" => $TCA["tx_tceformstest_flex"]["ctrl"],
 	"interface" => array (
 		"showRecordFieldList" => "hidden,flex"
 	),
-	"feInterface" => $TCA["tx_tceformtest_flex"]["feInterface"],
+	"feInterface" => $TCA["tx_tceformstest_flex"]["feInterface"],
 	"columns" => array (
 		"passthrough" => Array (
 			"exclude" => 1,		

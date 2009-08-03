@@ -1,12 +1,12 @@
-﻿<?php
+<?php
 if (!defined ('TYPO3_MODE')) 	die ('Access denied.');
 
-$TCA["tx_tceformtest_input_eval"] = array (
-	"ctrl" => $TCA["tx_tceformtest_input_eval"]["ctrl"],
+$TCA["tx_tceformstest_input_eval"] = array (
+	"ctrl" => $TCA["tx_tceformstest_input_eval"]["ctrl"],
 	"interface" => array (
 		"showRecordFieldList" => "hidden,inputfield"
 	),
-	"feInterface" => $TCA["tx_tceformtest_input_eval"]["feInterface"],
+	"feInterface" => $TCA["tx_tceformstest_input_eval"]["feInterface"],
 	"columns" => array (		
 		'hidden' => array (		
 			'exclude' => 1,
@@ -26,7 +26,7 @@ $TCA["tx_tceformtest_input_eval"] = array (
 		),		
 		"inputfield_trim" => Array (		
 			"exclude" => 1,		
-			"label" => "Eval: trim",
+			"label" => "Eval: trim (should remove whitespaces before and after text)",
 			"config" => Array (
 				"type" => "input",
 				"eval" => "trim",
@@ -209,7 +209,7 @@ $TCA["tx_tceformtest_input_eval"] = array (
 			"label" => "Eval: user defined: appends always the number '500' to your input",
 			"config" => Array (
 				"type" => "input",
-				"eval" => "tx_tceformtest_eval",
+				"eval" => "tx_tceformstest_inputeval",
 			)
 		),
 		"inputfield_combination" => Array (		

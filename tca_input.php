@@ -1,12 +1,12 @@
-﻿<?php
+<?php
 if (!defined ('TYPO3_MODE')) 	die ('Access denied.');
 
-$TCA["tx_tceformtest_input"] = array (
-	"ctrl" => $TCA["tx_tceformtest_input"]["ctrl"],
+$TCA["tx_tceformstest_input"] = array (
+	"ctrl" => $TCA["tx_tceformstest_input"]["ctrl"],
 	"interface" => array (
 		"showRecordFieldList" => "hidden,inputfield"
 	),
-	"feInterface" => $TCA["tx_tceformtest_input"]["feInterface"],
+	"feInterface" => $TCA["tx_tceformstest_input"]["feInterface"],
 	"columns" => array (		
 		'hidden' => array (		
 			'exclude' => 1,
@@ -56,6 +56,7 @@ $TCA["tx_tceformtest_input"] = array (
 			"label" => "Tests range (lower is set to 10, upper is set to 1000)",
 			"config" => Array (
 				"type" => "input",
+				"eval" => "int",
 				"range" => Array(
 					'lower' => 10,
 					'upper' => 1000,

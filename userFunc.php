@@ -1,4 +1,18 @@
 <?php
+
+class tx_tceformstest_inputeval {
+  function returnFieldJS() {
+    return '
+      return value + "500";
+    ';
+  }
+
+  function evaluateFieldValue($value, $is_in, &$set) {
+    return $value . '500';
+  }
+}
+
+
 class user_test {
 	function user_TCAform_test($PA, $fobj) {
 		return '<div style="border: 2px dashed #666666;width : 90%;margin: 5px 5px 5px 5px;padding: 5px 5px 5px 5px;" >
