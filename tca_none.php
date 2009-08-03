@@ -17,7 +17,7 @@ $TCA['tx_tceformstest_none'] = array (
 			)
 		),
 		'sys_language_uid' => array (		
-			'exclude' => 1,
+			'exclude' => 0,
 			'label'  => 'LLL:EXT:lang/locallang_general.xml:LGL.language',
 			'config' => array (
 				'type'                => 'select',
@@ -31,7 +31,7 @@ $TCA['tx_tceformstest_none'] = array (
 		),
 		'l10n_parent' => array (		
 			'displayCond' => 'FIELD:sys_language_uid:>:0',
-			'exclude'     => 1,
+			'exclude'     => 0,
 			'label'       => 'LLL:EXT:lang/locallang_general.xml:LGL.l18n_parent',
 			'config'      => array (
 				'type'  => 'select',
@@ -48,7 +48,7 @@ $TCA['tx_tceformstest_none'] = array (
 			)
 		),
 		'hidden' => array (		
-			'exclude' => 1,
+			'exclude' => 0,
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.hidden',
 			'config'  => array (
 				'type'    => 'check',
@@ -56,7 +56,7 @@ $TCA['tx_tceformstest_none'] = array (
 			)
 		),
 		'starttime' => array (		
-			'exclude' => 1,
+			'exclude' => 0,
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.starttime',
 			'config'  => array (
 				'type'     => 'input',
@@ -68,7 +68,7 @@ $TCA['tx_tceformstest_none'] = array (
 			)
 		),
 		'endtime' => array (		
-			'exclude' => 1,
+			'exclude' => 0,
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.endtime',
 			'config'  => array (
 				'type'     => 'input',
@@ -84,7 +84,7 @@ $TCA['tx_tceformstest_none'] = array (
 			)
 		),
 		'fe_group' => array (		
-			'exclude' => 1,
+			'exclude' => 0,
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.fe_group',
 			'config'  => array (
 				'type'  => 'select',

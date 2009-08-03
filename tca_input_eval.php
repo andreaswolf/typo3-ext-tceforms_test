@@ -9,7 +9,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 	"feInterface" => $TCA["tx_tceformstest_input_eval"]["feInterface"],
 	"columns" => array (		
 		'hidden' => array (		
-			'exclude' => 1,
+			'exclude' => 0,
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.hidden',
 			'config'  => array (
 				'type'    => 'check',
@@ -17,7 +17,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 			)
 		),
 		"inputfield_required" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: required",
 			"config" => Array (
 				"type" => "input",
@@ -25,7 +25,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 			)
 		),		
 		"inputfield_trim" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: trim (should remove whitespaces before and after text)",
 			"config" => Array (
 				"type" => "input",
@@ -34,7 +34,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),		
 		
 		"inputfield_date" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: date",
 			"config" => Array (
 				"type" => "input",
@@ -43,7 +43,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),		
 		
 		"inputfield_datetime" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: datetime",
 			"config" => Array (
 				"type" => "input",
@@ -52,7 +52,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),	
 			
 		"inputfield_time" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: time",
 			"config" => Array (
 				"type" => "input",
@@ -61,7 +61,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),	
 		
 		"inputfield_timesec" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: timesec",
 			"config" => Array (
 				"type" => "input",
@@ -70,7 +70,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),	
 		
 		"inputfield_year" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: year",
 			"config" => Array (
 				"type" => "input",
@@ -79,7 +79,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),
 		
 		"inputfield_int" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: int",
 			"config" => Array (
 				"type" => "input",
@@ -88,7 +88,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),
 		
 		"inputfield_upper" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: upper",
 			"config" => Array (
 				"type" => "input",
@@ -97,7 +97,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),
 		
 		"inputfield_lower" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: lower",
 			"config" => Array (
 				"type" => "input",
@@ -106,7 +106,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),
 		
 		"inputfield_alpha" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: alpha",
 			"config" => Array (
 				"type" => "input",
@@ -115,7 +115,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),
 		
 		"inputfield_num" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: num : Allows only 0-9 characters in the field.",
 			"config" => Array (
 				"type" => "input",
@@ -124,7 +124,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),
 		
 		"inputfield_alphanum" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: alphanum : Same as alpha but allows also 0-9",
 			"config" => Array (
 				"type" => "input",
@@ -133,7 +133,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),				
 		
 		"inputfield_alphanum_x" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: alphanum_x : Same as alphanum but allows also _ and - chars.",
 			"config" => Array (
 				"type" => "input",
@@ -142,7 +142,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),		
 		
 		"inputfield_nospace" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: nospace : Removes all occurrences of space characters (chr(32))",
 			"config" => Array (
 				"type" => "input",
@@ -151,7 +151,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),		
 				
 		"inputfield_md5" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: md5 : Will convert the inputted value to the md5-hash of it (The JavaScript MD5() function is found in typo3/md5.js)",
 			"config" => Array (
 				"type" => "input",
@@ -160,7 +160,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),		
 		
 		"inputfield_is_in" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: is_in (Set Letters: abc123)",
 			"config" => Array (
 				"type" => "input",
@@ -170,7 +170,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),		
 		
 		"inputfield_password" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: password",
 			"config" => Array (
 				"type" => "input",
@@ -179,7 +179,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),		
 		
 		"inputfield_double2" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: double2 (float with 2 decimals)",
 			"config" => Array (
 				"type" => "input",
@@ -188,7 +188,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),	
 		
 		"inputfield_unique" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: unique",
 			"config" => Array (
 				"type" => "input",
@@ -197,7 +197,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 		),	
 		
 		"inputfield_uniqueInPid" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: uniqueInPid",
 			"config" => Array (
 				"type" => "input",
@@ -205,7 +205,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 			)
 		),
 		"inputfield_userdefined" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: user defined: appends always the number '500' to your input",
 			"config" => Array (
 				"type" => "input",
@@ -213,7 +213,7 @@ $TCA["tx_tceformstest_input_eval"] = array (
 			)
 		),
 		"inputfield_combination" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Eval: required and int in combination",
 			"config" => Array (
 				"type" => "input",

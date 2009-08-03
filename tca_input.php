@@ -9,7 +9,7 @@ $TCA["tx_tceformstest_input"] = array (
 	"feInterface" => $TCA["tx_tceformstest_input"]["feInterface"],
 	"columns" => array (		
 		'hidden' => array (		
-			'exclude' => 1,
+			'exclude' => 0,
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.hidden',
 			'config'  => array (
 				'type'    => 'check',
@@ -17,7 +17,7 @@ $TCA["tx_tceformstest_input"] = array (
 			)
 		),
 		"inputfield_size" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Tests size: is set to 30",
 			"config" => Array (
 				"type" => "input",
@@ -25,7 +25,7 @@ $TCA["tx_tceformstest_input"] = array (
 			)
 		),
 		"inputfield_max" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Tests max: 30",
 			"config" => Array (
 				"type" => "input",
@@ -34,7 +34,7 @@ $TCA["tx_tceformstest_input"] = array (
 		),
 		
 		"inputfield_default" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Tests default value",
 			"config" => Array (
 				"type" => "input",
@@ -43,7 +43,7 @@ $TCA["tx_tceformstest_input"] = array (
 		),		
 
 		"inputfield_checkbox" => Array (		
-			"exclude" => 1,		
+			"exclude" => 0,		
 			"label" => "Tests checkbox (is set to 123)",
 			"config" => Array (
 				"type" => "input",
@@ -52,7 +52,7 @@ $TCA["tx_tceformstest_input"] = array (
 		),		
 		
 		"inputfield_range" => Array (
-			"exclude" => 1,
+			"exclude" => 0,
 			"label" => "Tests range (lower is set to 10, upper is set to 1000)",
 			"config" => Array (
 				"type" => "input",
@@ -64,7 +64,7 @@ $TCA["tx_tceformstest_input"] = array (
 			),
 		),
 		"inputfield_linkwizard" => Array (
-			"exclude" => 1,
+			"exclude" => 0,
 			"label" => "Tests linkwizard",
 			"config" => Array (
 				"type" => "input",
