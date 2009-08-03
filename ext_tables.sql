@@ -1,5 +1,5 @@
 #
-# Table structure for table 'tx_tceformtest_text'
+# Table structure for table 'tx_tceformstest_text'
 #
 CREATE TABLE tx_tceformstest_text (
 	uid int(11) NOT NULL auto_increment,
@@ -138,9 +138,9 @@ CREATE TABLE tx_tceformstest_user (
 );
 
 #
-# Table structure for table 'tx_tceformtest_input'
+# Table structure for table 'tx_tceformstest_input'
 #
-CREATE TABLE tx_tceformtest_input (
+CREATE TABLE tx_tceformstest_input (
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
 	tstamp int(11) DEFAULT '0' NOT NULL,
@@ -158,7 +158,7 @@ CREATE TABLE tx_tceformtest_input (
 	KEY parent (pid)
 );
 
-CREATE TABLE tx_tceformtest_input_eval (
+CREATE TABLE tx_tceformstest_input_eval (
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
 	tstamp int(11) DEFAULT '0' NOT NULL,
@@ -195,7 +195,7 @@ CREATE TABLE tx_tceformtest_input_eval (
 	KEY parent (pid)
 );
 
-CREATE TABLE tx_tceformtest_passthrough (
+CREATE TABLE tx_tceformstest_passthrough (
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
 	tstamp int(11) DEFAULT '0' NOT NULL,
@@ -209,7 +209,7 @@ CREATE TABLE tx_tceformtest_passthrough (
 	KEY parent (pid)
 );
 
-CREATE TABLE tx_tceformtest_flex (
+CREATE TABLE tx_tceformstest_flex (
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
 	tstamp int(11) DEFAULT '0' NOT NULL,
