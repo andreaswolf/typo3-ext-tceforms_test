@@ -70,19 +70,19 @@ $TCA['tx_tceformstest_select'] = array(
 				'default' => 2
 			)
 		),
-		/*'select_6' => array (
+		'select_icons' => array (
 			'exclude' => 0,
-			'label' => 'Select box with two items and itemsProcFunc',
+			'label' => 'Select box with three items with icons',
 			'config' => array (
 				'type' => 'select',
 				'items' => array(
-					array('item 1', 1),
-					array('item 2', 2),
-					array('item 3', 4)
+					array('item 1 (de)', 'de', 'EXT:tceforms_test/icons/flag_de.gif'),
+					array('item 2 (fr)', 'fr', 'EXT:tceforms_test/icons/flag_fr.gif'),
+					array('item 3 (es) -> Icon from typo3/gfx/ folder', 'es', 'flags/es.gif')
 				),
-				'default' => 2
+				'default' => 'fr'
 			)
-		),*/
+		),
 		'select_multiple' => array (
 			'exclude' => 0,
 			'label' => 'Select box with multiple set, maxitems=5, minitems=2',
@@ -204,9 +204,23 @@ $TCA['tx_tceformstest_select'] = array(
 				'maxitems' => 2
 			)
 		),
+		'select_renderModeCheckbox' => array (
+			'exclude' => 0,
+			'label' => 'Render mode checkbox',
+			'config' => array (
+				'type' => 'select',
+				'items' => array(
+					array('item 1', 1, '', 'Test description for item 1'),
+					array('item 2', 2),
+					array('item 3', 4)
+				),
+				'renderMode' => 'checkbox',
+				'maxitems' => 2
+			)
+		),
 	),
 	'types' => array (
-		'0' => array('showitem' => '--div--;General options, select_1;;;;1-1-1, select_2, select_3, select_4, select_5, select_6, select_multiple, select_exclusiveKeys, --div--;"special" values, select_special_tables;;;;1-1-1, select_special_tables_no_icons, select_special_pagetypes, select_special_exclude, select_special_modlistgroup, select_special_modlistuser, select_special_explicitvalues, select_special_languages, --div--;list styles, select_itemListStyle')
+		'0' => array('showitem' => '--div--;General options, select_1;;;;1-1-1, select_2, select_3, select_4, select_5, select_icons, select_multiple, select_exclusiveKeys, --div--;"special" values, select_special_tables;;;;1-1-1, select_special_tables_no_icons, select_special_pagetypes, select_special_exclude, select_special_modlistgroup, select_special_modlistuser, select_special_explicitvalues, select_special_languages, --div--;list styles, select_itemListStyle, --div--;Render modes, select_renderModeCheckbox')
 	),
 );
 
