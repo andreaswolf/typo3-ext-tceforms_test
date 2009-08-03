@@ -12,6 +12,15 @@ class tx_tceformstest_inputeval {
   }
 }
 
+class tx_tceformstest_selectEval {
+	function itemsProcFunc(&$params) {
+		$params['items'] = array(
+			array('item 1 from itemProcFunc()'),
+			array('item 2 from itemProcFunc()')
+		);
+	}
+}
+
 
 class user_test {
 	function user_TCAform_test($PA, $fobj) {

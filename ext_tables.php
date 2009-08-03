@@ -20,7 +20,7 @@ $TCA['tx_tceformstest_check'] = array (
 			'endtime' => 'endtime',	
 			'fe_group' => 'fe_group',
 		),
-		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca.php',
+		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca_check.php',
 		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_tceformstest_check.gif',
 	),
 );
@@ -39,6 +39,27 @@ $TCA["tx_tceformstest_input"] = array (
 		),
 		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca_input.php',
 		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_tceformstest_input.gif',
+	),
+	"feInterface" => array (
+		"fe_admin_fieldList" => "hidden, inputfield",
+	)
+);
+
+$TCA["tx_tceformstest_select"] = array (
+	"ctrl" => array (
+		'title'     => 'TCEforms Test field, type "select"',		
+		'label'     => 'uid',	
+		'tstamp'    => 'tstamp',
+		'crdate'    => 'crdate',
+		'cruser_id' => 'cruser_id',
+		'default_sortby' => "ORDER BY crdate",	
+		'delete' => 'deleted',	
+		'enablecolumns' => array (
+			'disabled' => 'hidden',
+		),
+		'dividers2tabs' => 1,
+		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca_select.php',
+		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_tceformstest_select.gif',
 	),
 	"feInterface" => array (
 		"fe_admin_fieldList" => "hidden, inputfield",
