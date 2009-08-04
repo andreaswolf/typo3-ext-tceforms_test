@@ -164,7 +164,7 @@ $TCA['tx_tceformstest_text'] = array (
 		'enablecolumns' => array (		
 			'disabled' => 'hidden',	
 		),
-		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca.php',
+		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca_text.php',
 		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_tceformstest_text.gif',
 	),
 );
@@ -189,7 +189,7 @@ $TCA['tx_tceformstest_user'] = array (
 			'endtime' => 'endtime',	
 			'fe_group' => 'fe_group',
 		),
-		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca.php',
+		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca_user.php',
 		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_tceformstest_check.gif',
 	),
 );
