@@ -25,6 +25,26 @@ $TCA['tx_tceformstest_check'] = array (
 	),
 );
 
+$TCA["tx_tceformstest_group"] = array (
+	"ctrl" => array(
+		'title'     => 'TCEforms Test field, type "group"',
+		'label'     => 'uid',
+		'tstamp'    => 'tstamp',
+		'crdate'    => 'crdate',
+		'cruser_id' => 'cruser_id',
+		'default_sortby' => "ORDER BY crdate",
+		'delete' => 'deleted',
+		'enablecolumns' => array(
+			'disabled' => 'hidden',
+		),
+		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY).'tca_group.php',
+		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_tceformstest_group.gif',
+	),
+	"feInterface" => array (
+		"fe_admin_fieldList" => "hidden, inputfield",
+	)
+);
+
 $TCA["tx_tceformstest_input"] = array (
 	"ctrl" => array (
 		'title'     => 'TCEforms Test field, type "input"',		

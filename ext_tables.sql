@@ -39,6 +39,26 @@ CREATE TABLE tx_tceformstest_select (
 );
 
 #
+# Table structure for table 'tx_tceformstest_group'
+#
+CREATE TABLE tx_tceformstest_group (
+	uid int(11) NOT NULL auto_increment,
+	pid int(11) DEFAULT '0' NOT NULL,
+	tstamp int(11) DEFAULT '0' NOT NULL,
+	crdate int(11) DEFAULT '0' NOT NULL,
+	cruser_id int(11) DEFAULT '0' NOT NULL,
+	deleted tinyint(4) DEFAULT '0' NOT NULL,
+	hidden tinyint(4) DEFAULT '0' NOT NULL,
+	group_db varchar(255) DEFAULT '' NOT NULL,
+	group_file_thumbnails text NOT NULL,
+	group_file_controls text NOT NULL,
+	group_file_uploadonly text NOT NULL,
+	
+	PRIMARY KEY (uid),
+	KEY parent (pid)
+);
+
+#
 # Table structure for table 'tx_tceformstest_check'
 #
 CREATE TABLE tx_tceformstest_check (
