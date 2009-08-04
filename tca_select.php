@@ -36,7 +36,7 @@ $TCA['tx_tceformstest_select'] = array(
 			'config' => array (
 				'type' => 'select',
 				'foreign_table' => 'static_countries',
-				'foreign_table_where' => 'AND cn_short_local LIKE "G%"',
+				'foreign_table_where' => 'AND cn_short_local LIKE "G%" ORDER BY cn_short_local',
 				'foreign_table_prefix' => 'Prefix: '
 			)
 		),
@@ -221,11 +221,11 @@ $TCA['tx_tceformstest_select'] = array(
 		),
 		'select_renderModeCheckbox' => array (
 			'exclude' => 0,
-			'label' => 'Render mode checkbox',
+			'label' => 'Render mode "checkbox"',
 			'config' => array (
 				'type' => 'select',
 				'items' => array(
-					array('item 1', 1, '', 'Test description for item 1'),
+					array('item 1', 1),
 					array('item 2', 2),
 					array('item 3', 4)
 				),
@@ -233,9 +233,23 @@ $TCA['tx_tceformstest_select'] = array(
 				'maxitems' => 2
 			)
 		),
+		'select_renderModeSinglebox' => array (
+			'exclude' => 0,
+			'label' => 'Render mode "singlebox"',
+			'config' => array (
+				'type' => 'select',
+				'items' => array(
+					array('item 1', 1),
+					array('item 2', 2),
+					array('item 3', 4)
+				),
+				'renderMode' => 'singlebox',
+				'maxitems' => 2
+			)
+		),
 	),
 	'types' => array (
-		'0' => array('showitem' => '--div--;General options, select_1;;;;1-1-1, select_2, select_3, select_5, select_multiple, select_exclusiveKeys, --div--;Icons, select_fileFolder, select_icons, select_iconsInOptionTags, --div--;"special" values, select_special_tables;;;;1-1-1, select_special_tables_no_icons, select_special_pagetypes, select_special_exclude, select_special_modlistgroup, select_special_modlistuser, select_special_explicitvalues, select_special_languages, --div--;list styles, select_itemListStyle, --div--;Render modes, select_renderModeCheckbox')
+		'0' => array('showitem' => '--div--;General options, select_1;;;;1-1-1, select_2, select_3, select_5, select_multiple, select_exclusiveKeys, --div--;Icons, select_fileFolder, select_icons, select_iconsInOptionTags, --div--;"special" values, select_special_tables;;;;1-1-1, select_special_tables_no_icons, select_special_pagetypes, select_special_exclude, select_special_modlistgroup, select_special_modlistuser, select_special_explicitvalues, select_special_languages, --div--;list styles, select_itemListStyle, --div--;Render modes, select_renderModeCheckbox, select_renderModeSinglebox')
 	),
 );
 
