@@ -54,6 +54,7 @@ $TCA["tx_tceformstest_input"] = array (
 		'cruser_id' => 'cruser_id',
 		'default_sortby' => "ORDER BY crdate",	
 		'delete' => 'deleted',	
+		'dividers2tabs' => 1,
 		'enablecolumns' => array (		
 			'disabled' => 'hidden',
 		),

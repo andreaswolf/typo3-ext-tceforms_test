@@ -79,10 +79,27 @@ $TCA["tx_tceformstest_input"] = array (
 					)
 				)
 			),
-		),				
+		),
+		"input_colorpicker" => Array (
+			"exclude" => 0,
+			"label" => "Tests colorpicker wizard",
+			"config" => Array(
+				"type" => "input",
+				'wizards' => Array(
+					'_PADDING' => 2,
+					'colorpicker' => Array(
+						'type' => 'colorbox',
+						'title' => 'Color picker',
+						'icon' => 'link_popup.gif',
+						'script' => 'wizard_colorpicker.php',
+						'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
+					)
+				)
+			),
+		),
 	),
 	"types" => array (
-		"0" => array("showitem" => "hidden;;1;;1-1-1, inputfield_size,inputfield_max,inputfield_default,inputfield_checkbox,inputfield_range,inputfield_linkwizard")
+		"0" => array("showitem" => "--div--;General, hidden;;1;;1-1-1, inputfield_size, inputfield_max, inputfield_default, inputfield_checkbox, inputfield_range, --div--;Wizards, inputfield_linkwizard;;;;1-1-1, input_colorpicker")
 	),
 	"palettes" => array (
 		"1" => array("showitem" => "")
