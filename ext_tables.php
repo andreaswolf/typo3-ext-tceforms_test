@@ -1,5 +1,16 @@
 <?php
 
+t3lib_extMgm::allowTableOnStandardPages('tx_tceformstest_check');
+t3lib_extMgm::allowTableOnStandardPages('tx_tceformstest_group');
+t3lib_extMgm::allowTableOnStandardPages('tx_tceformstest_select');
+t3lib_extMgm::allowTableOnStandardPages('tx_tceformstest_input');
+t3lib_extMgm::allowTableOnStandardPages('tx_tceformstest_input_eval');
+t3lib_extMgm::allowTableOnStandardPages('tx_tceformstest_none');
+t3lib_extMgm::allowTableOnStandardPages('tx_tceformstest_passthrough');
+t3lib_extMgm::allowTableOnStandardPages('tx_tceformstest_flex');
+t3lib_extMgm::allowTableOnStandardPages('tx_tceformstest_text');
+t3lib_extMgm::allowTableOnStandardPages('tx_tceformstest_user');
+
 $TCA['tx_tceformstest_check'] = array (
 	'ctrl' => array (
 		'title'     => 'LLL:EXT:tceforms_test/locallang_db.xml:tx_tceformstest_check',		
