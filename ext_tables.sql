@@ -186,6 +186,7 @@ CREATE TABLE tx_tceformstest_input (
 	deleted tinyint(4) DEFAULT '0' NOT NULL,
 	hidden tinyint(4) DEFAULT '0' NOT NULL,
 	inputfield_size tinytext NOT NULL,
+	inputfield_readonly tinytext NOT NULL,
 	inputfield_max tinytext NOT NULL,
 	inputfield_checkbox tinytext NOT NULL,
 	inputfield_default tinytext NOT NULL,

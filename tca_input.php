@@ -24,6 +24,14 @@ $TCA["tx_tceformstest_input"] = array (
 				"max" => "30",
 			)
 		),
+		"inputfield_readonly" => Array (		
+			"exclude" => 0,		
+			"label" => "Field is read-only",
+			"config" => Array (
+				"type" => "input",
+				"readOnly" => TRUE,
+			)
+		),
 		"inputfield_max" => Array (		
 			"exclude" => 0,		
 			"label" => "Tests max: 30",
@@ -99,7 +107,7 @@ $TCA["tx_tceformstest_input"] = array (
 		),
 	),
 	"types" => array (
-		"0" => array("showitem" => "--div--;General, hidden;;1;;1-1-1, inputfield_size, inputfield_max, inputfield_default, inputfield_checkbox, inputfield_range, --div--;Wizards, inputfield_linkwizard;;;;1-1-1, input_colorpicker")
+		"0" => array("showitem" => "--div--;General, hidden;;1;;1-1-1, inputfield_size, inputfield_max, inputfield_default, inputfield_readonly, inputfield_checkbox, inputfield_range, --div--;Wizards, inputfield_linkwizard;;;;1-1-1, input_colorpicker")
 	),
 	"palettes" => array (
 		"1" => array("showitem" => "")
